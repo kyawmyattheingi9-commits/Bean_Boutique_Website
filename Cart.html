@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Bean Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="coffee.html">Our Coffee</a>
+            <a href="equipment.html">Equipment</a><a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+            <a class="active" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">YOUR COFFEE CORNER</p>
+            <h1>Your basket, <span>your favourites.</span></h1>
+            <p>Review your selections before your next coffee moment.</p>
+        </section>
+
+        <section class="section cart-section">
+            <div class="cart-layout">
+                <div class="cart-main">
+                    <h2>Shopping Basket</h2>
+                    <div id="cartItems" aria-live="polite">
+                        <p>Your basket is waiting for something wonderful.</p>
+                    </div>
+                </div>
+                <aside class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+                    <div class="summary-line"><span>Delivery</span><span>Calculated later</span></div>
+                    <div class="summary-line total-line"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+                    <p class="small-note">This is a front-end prototype. Online payment is not enabled.</p>
+                    <button class="btn btn-primary full-btn" id="checkoutBtn" type="button">Continue to
+                        Checkout</button>
+                    <p id="checkoutMessage" class="small-note" aria-live="polite"></p>
+                    <a class="text-link" href="coffee.html">← Continue shopping</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <p>Thoughtfully sourced. Beautifully brewed.</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="coffee.html">Coffee</a><a
+                href="equipment.html">Equipment</a></div>
+        <p class="copyright">© 2026 Bean Boutique Coffee Shop. Student website prototype.</p>
+    </footer>
+</body>
+
+</html>

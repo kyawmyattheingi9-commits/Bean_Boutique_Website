@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Workshops | Bean Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a><a href="coffee.html">Our Coffee</a>
+            <a href="equipment.html">Equipment</a><a class="active" href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a><a href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero events-hero">
+            <p class="eyebrow">LEARN · TASTE · CONNECT</p>
+            <h1>There's always more to <span>brew.</span></h1>
+            <p>Meet fellow coffee lovers and learn new skills one cup at a time.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">SAVE YOUR SEAT</p>
+                <h2>Upcoming <span>experiences.</span></h2>
+            </div>
+
+            <div class="card-grid three">
+                <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85"
+                        alt="Coffee tasting setup">
+                    <div class="card-body">
+                        <p class="event-date">18 OCTOBER 2026 · 10:00 AM</p>
+                        <h3>Discover Coffee Tasting</h3>
+                        <p>Explore aroma, acidity, body and flavour in a guided tasting.</p>
+                        <p class="event-meta">Duration: 90 minutes · Beginner friendly</p>
+                        <a class="text-link" href="#registration">Reserve a place ↗</a>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=85"
+                        alt="Pour-over coffee brewing demonstration">
+                    <div class="card-body">
+                        <p class="event-date">24 OCTOBER 2026 · 2:00 PM</p>
+                        <h3>Pour-Over Masterclass</h3>
+                        <p>Learn grind size, pouring technique and extraction basics.</p>
+                        <p class="event-meta">Duration: 2 hours · Equipment provided</p>
+                        <a class="text-link" href="#registration">Reserve a place ↗</a>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=85"
+                        alt="Freshly roasted coffee beans">
+                    <div class="card-body">
+                        <p class="event-date">31 OCTOBER 2026 · 11:00 AM</p>
+                        <h3>Meet the Roaster</h3>
+                        <p>Discover roasting profiles and how heat transforms coffee beans.</p>
+                        <p class="event-meta">Duration: 60 minutes · Small group</p>
+                        <a class="text-link" href="#registration">Reserve a place ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section registration-section" id="registration">
+            <div class="registration-copy">
+                <p class="eyebrow">YOUR NEXT COFFEE STORY</p>
+                <h2>Save your <span>seat.</span></h2>
+                <p>Complete the form to prepare your workshop registration email.</p>
+                <p class="small-note">Please confirm the event details before sending.</p>
+            </div>
+            <form class="registration-form" id="eventForm">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+                <label for="eventEmail">Email Address</label>
+                <input id="eventEmail" name="email" type="email" autocomplete="email" required>
+
+                <label for="eventChoice">Choose an Event</label>
+                <select id="eventChoice" name="event" required>
+                    <option value="">Select a workshop</option>
+                    <option>Discover Coffee Tasting</option>
+                    <option>Pour-Over Masterclass</option>
+                    <option>Meet the Roaster</option>
+                </select>
+
+                <button class="btn btn-primary full-btn" type="submit">Prepare Registration Email</button>
+                <p id="eventMessage" class="small-note" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <p>Thoughtfully sourced. Beautifully brewed.</p>
+        <div class="footer-links"><a href="index.html">Home</a><a href="coffee.html">Coffee</a><a
+                href="equipment.html">Equipment</a></div>
+        <p class="copyright">© 2026 Bean Boutique Coffee Shop. Student website prototype.</p>
+    </footer>
+</body>
+
+</html>

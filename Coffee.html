@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover specialty coffee blends, single-origin coffees and decaf at Bean Boutique.">
+
+    <title>Our Coffee | Bean Boutique</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+
+        <a class="logo" href="index.html">
+            BEAN<span> BOUTIQUE</span>
+        </a>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="coffee.html" aria-current="page">Our Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="cart.html">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="page-hero coffee-hero">
+
+            <p class="eyebrow">THE ART OF GREAT COFFEE</p>
+
+            <h1>
+                Find your perfect <span>blend.</span>
+            </h1>
+
+            <p>
+                Explore distinctive origins, signature blends and
+                flavours worth slowing down for.
+            </p>
+
+        </section>
+
+        <!-- Coffee Collection Section -->
+        <section class="section">
+
+            <h2 class="section-title">Explore Our Coffee Collection</h2>
+
+            <!-- Search Panel -->
+            <div class="search-panel">
+
+                <label for="coffeeSearch">
+                    Search our coffee collection
+                </label>
+
+                <input id="coffeeSearch" class="search-input" type="search"
+                    placeholder="Try espresso, chocolate, fruity..." aria-describedby="searchHelp">
+
+                <p class="small-note" id="searchHelp">
+                    Search by coffee name, flavour notes or brewing method.
+                </p>
+
+                <!-- Coffee Category Filters -->
+                <div class="filter-row" role="group" aria-label="Coffee category filters">
+
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+                        All Coffee
+                    </button>
+
+                    <button class="filter-btn" type="button" data-filter="blend" aria-pressed="false">
+                        Blends
+                    </button>
+
+                    <button class="filter-btn" type="button" data-filter="single" aria-pressed="false">
+                        Single Origin
+                    </button>
+
+                    <button class="filter-btn" type="button" data-filter="decaf" aria-pressed="false">
+                        Decaf
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Search Status -->
+            <p id="searchStatus" class="small-note" aria-live="polite">
+                Showing all 12 coffees.
+            </p>
+
+            <!-- Coffee Product Grid -->
+            <div class="card-grid four" id="coffeeGrid">
+
+                <!-- Coffee 1 -->
+                <article class="product-card coffee-item" data-category="blend"><img
+                        src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Signature espresso coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">HOUSE FAVOURITE</span>
+
+                        <h3>Midnight Espresso</h3>
+
+                        <p class="tasting">
+                            Dark chocolate · Hazelnut · Caramel
+                        </p>
+
+                        <p>Bold and smooth with a rich finish.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Espresso machine
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$14.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee1" data-name="Midnight Espresso"
+                                data-price="14" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 2 -->
+                <article class="product-card coffee-item" data-category="blend">
+
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Medium roast coffee beans" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">SIGNATURE BLEND</span>
+
+                        <h3>Golden Hour</h3>
+
+                        <p class="tasting">
+                            Toffee · Almond · Milk chocolate
+                        </p>
+
+                        <p>A balanced, comforting everyday coffee.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> French press
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$13.50</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee2" data-name="Golden Hour"
+                                data-price="13.5" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 3 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Coffee beans for Ethiopia Yirgacheffe" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">SINGLE ORIGIN</span>
+
+                        <h3>Ethiopia Yirgacheffe</h3>
+
+                        <p class="tasting">
+                            Jasmine · Lemon · Blueberry
+                        </p>
+
+                        <p>Bright, floral and delicately fruity.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Pour-over
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$17.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee3" data-name="Ethiopia Yirgacheffe"
+                                data-price="17" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 4 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Freshly brewed Colombian coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">SINGLE ORIGIN</span>
+
+                        <h3>Colombia Supremo</h3>
+
+                        <p class="tasting">
+                            Red apple · Cocoa · Brown sugar
+                        </p>
+
+                        <p>Sweet, rounded and wonderfully versatile.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Drip coffee
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$15.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee4" data-name="Colombia Supremo"
+                                data-price="15" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 5 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Brazilian coffee beans" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">SMOOTH &amp; SWEET</span>
+
+                        <h3>Brazil Santos</h3>
+
+                        <p class="tasting">
+                            Peanut · Milk chocolate · Fig
+                        </p>
+
+                        <p>Low acidity with a creamy body.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Moka pot
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$14.50</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee5" data-name="Brazil Santos"
+                                data-price="14.5" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 6 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Kenyan coffee in a cup" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">BRIGHT &amp; JUICY</span>
+
+                        <h3>Kenya AA</h3>
+
+                        <p class="tasting">
+                            Blackcurrant · Citrus · Cane sugar
+                        </p>
+
+                        <p>Lively fruit notes and a clean finish.</p>
+                        <p class="brew">
+                            <b>Best brewed:</b> Pour-over
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$18.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee6" data-name="Kenya AA"
+                                data-price="18" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 7 -->
+                <article class="product-card coffee-item" data-category="blend">
+
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Creamy latte coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">MILK COFFEE PICK</span>
+
+                        <h3>Velvet Latte Blend</h3>
+
+                        <p class="tasting">
+                            Caramel · Cocoa · Cream
+                        </p>
+
+                        <p>Designed to shine in milk-based drinks.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Espresso machine
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$15.50</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee7" data-name="Velvet Latte Blend"
+                                data-price="15.5" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 8 -->
+                <article class="product-card coffee-item" data-category="blend">
+
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Iced coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">CHILL &amp; SIP</span>
+
+                        <h3>Summer Cold Brew</h3>
+
+                        <p class="tasting">
+                            Dark chocolate · Cherry · Brown sugar
+                        </p>
+
+                        <p>Low bitterness and a refreshing finish.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Cold brew steep
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$16.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee8" data-name="Summer Cold Brew"
+                                data-price="16" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 9 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Guatemala coffee beans" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">HIGHLAND GROWN</span>
+                        <h3>Guatemala Antigua</h3>
+
+                        <p class="tasting">
+                            Cocoa · Orange · Spice
+                        </p>
+
+                        <p>Complex, warm and gently sweet.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> French press
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$16.50</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee9" data-name="Guatemala Antigua"
+                                data-price="16.5" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 10 -->
+                <article class="product-card coffee-item" data-category="single">
+
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Costa Rican brewed coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">CLEAN &amp; BRIGHT</span>
+
+                        <h3>Costa Rica Tarrazú</h3>
+
+                        <p class="tasting">
+                            Honey · Peach · Citrus
+                        </p>
+
+                        <p>Sweet and lively with a crisp finish.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Pour-over
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$17.50</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee10" data-name="Costa Rica Tarrazú"
+                                data-price="17.5" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 11 -->
+                <article class="product-card coffee-item" data-category="blend">
+
+                    <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Rich roasted coffee" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">DARK ROAST</span>
+
+                        <h3>Smoky Mocha</h3>
+
+                        <p class="tasting">
+                            Dark cocoa · Toasted nuts · Spice
+                        </p>
+
+                        <p>Deep and intense for a full-bodied cup.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Espresso
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$15.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee11" data-name="Smoky Mocha"
+                                data-price="15" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Coffee 12 -->
+                <article class="product-card coffee-item" data-category="decaf"><img
+                        src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                        alt="Decaffeinated coffee in a cup" loading="lazy">
+
+                    <div class="card-body">
+
+                        <span class="tag">DECAF</span>
+
+                        <h3>Evening Ease</h3>
+
+                        <p class="tasting">
+                            Caramel · Biscuit · Cocoa
+                        </p>
+
+                        <p>A mellow option for an evening ritual.</p>
+
+                        <p class="brew">
+                            <b>Best brewed:</b> Filter or French press
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong>$15.00</strong>
+
+                            <button class="btn btn-primary add-cart" data-id="coffee12" data-name="Evening Ease Decaf"
+                                data-price="15" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- No Results Message -->
+            <p id="noCoffeeResults" class="empty-state" hidden>
+                No matching coffee found. Try another search.
+            </p>
+
+        </section>
+
+        <!-- Subscription Promotion -->
+        <section class="promo-banner">
+
+            <div>
+                <p class="eyebrow">
+                    LOVE DISCOVERING NEW FLAVOURS?
+                </p>
+
+                <h2>Let your next cup surprise you.</h2>
+
+                <p>
+                    Choose a coffee subscription that fits your routine.
+                </p>
+            </div>
+
+            <a class="btn btn-light" href="offers.html">
+                Explore Plans &#8599;
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <a class="logo footer-logo" href="index.html">
+            BEAN<span> BOUTIQUE</span>
+        </a>
+
+        <p>Thoughtfully sourced. Beautifully brewed.</p>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+        </nav>
+
+        <p class="copyright">
+            &copy; 2026 Bean Boutique Coffee Shop.
+            Student website prototype.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

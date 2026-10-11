@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique | Artisan Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="coffee.html">Our Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+            <a href="cart.html">Cart <span class="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">SMALL BATCH · BIG FLAVOUR</p>
+                <h1>Your daily ritual,<br>brewed <span>beautifully.</span></h1>
+                <p>Discover exceptional coffee, thoughtfully sourced
+                    beans and the art of a perfect cup.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="coffee.html">Explore Our Coffee</a>
+                    <a class="btn btn-outline" href="events.html">Join a Workshop</a>
+                </div>
+            </div>
+            <div class="hero-note">
+                <span>✦</span> Crafted for coffee lovers
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR NEXT FAVOURITE CUP</p>
+                <h2>Made for your <span>moments.</span></h2>
+                <p>From bold espresso to a slow Sunday pour-over.</p>
+            </div>
+            <div class="card-grid three">
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=85"
+                        alt="Fresh roasted coffee beans">
+                    <div class="card-body">
+                        <span class="tag">BESTSELLER</span>
+                        <h3>Signature Blends</h3>
+                        <p>Rich aromas and carefully balanced flavours
+                            for your everyday brew.</p>
+                        <a class="text-link" href="coffee.html">Discover blends ↗</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85"
+                        alt="Freshly prepared iced coffee">
+                    <div class="card-body">
+                        <span class="tag">FRESHLY BREWED</span>
+                        <h3>Coffee Moments</h3>
+                        <p>Find your favourite flavour, from creamy
+                            lattes to refreshing cold brews.</p>
+                        <a class="text-link" href="coffee.html">Find your cup ↗</a>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=85"
+                        alt="Coffee brewing equipment">
+                    <div class="card-body">
+                        <span class="tag">BREW AT HOME</span>
+                        <h3>Brewing Essentials</h3>
+                        <p>Bring the café experience home with
+                            equipment made for better coffee.</p>
+                        <a class="text-link" href="equipment.html">Shop equipment ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="story-image"></div>
+            <div class="story-content">
+                <p class="eyebrow">OUR COFFEE PHILOSOPHY</p>
+                <h2>Good coffee.<br><span>Better connections.</span></h2>
+                <p>We believe every great cup starts with quality
+                    beans, careful roasting and a little curiosity.
+                    Discover new flavours and make every brew your own.</p>
+                <a class="btn btn-primary" href="events.html">Meet the Community</a>
+            </div>
+        </section>
+
+        <section class="promo-banner">
+            <div>
+                <p class="eyebrow">YOUR COFFEE, ON REPEAT</p>
+                <h2>A little joy in every delivery.</h2>
+                <p>Explore flexible plans for your daily coffee ritual.</p>
+            </div>
+            <a class="btn btn-light" href="offers.html">Explore Subscriptions ↗</a>
+        </section>
+
+        <section class="section location-section">
+            <div class="section-heading">
+                <p class="eyebrow">COME SAY HELLO</p>
+                <h2>Your neighbourhood <span>coffee spot.</span></h2>
+                <p>Find a place to slow down, sip and connect.</p>
+            </div>
+            <div class="map-frame">
+                <iframe title="Map showing a sample coffee shop location"
+                    src="https://www.google.com/maps?q=coffee%20shop%20Mandalay&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p class="small-note">Map widget demonstration. Replace this search with
+                the real shop address when it is available.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="index.html">BEAN<span> BOUTIQUE</span></a>
+        <p>Thoughtfully sourced. Beautifully brewed.</p>
+        <div class="footer-links">
+            <a href="coffee.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="offers.html">Subscriptions</a>
+        </div>
+        <p class="copyright">© 2026 Bean Boutique Coffee Shop. Student website prototype.</p>
+    </footer>
+
+    <div class="popup-backdrop" id="welcomePopup" hidden>
+        <section class="popup-card" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+            <button class="popup-close" id="closePopup" type="button" aria-label="Close welcome offer">×</button>
+            <p class="eyebrow">A WARM WELCOME</p>
+            <h2 id="popupTitle">Your first cup comes with a little <span>extra.</span></h2>
+            <p>Sign up to receive a welcome offer on your first purchase.</p>
+            <form id="newsletterForm">
+                <label for="newsletterEmail">Email address</label>
+                <input id="newsletterEmail" type="email" placeholder="you@example.com" required>
+                <button class="btn btn-primary" type="submit">Get My Welcome Offer</button>
+            </form>
+            <p class="small-note" id="newsletterMessage" aria-live="polite"></p>
+        </section>
+    </div>
+</body>
+
+</html>
